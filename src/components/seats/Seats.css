@@ -1,0 +1,43 @@
+.seats__container {
+  text-align: center;
+}
+
+.seats__description {
+  max-width: 700px;
+  margin: 1rem auto 2rem;
+  color: var(--text-light);
+  line-height: 1.6rem;
+}
+
+.seats__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.seat {
+  background: var(--white);
+  border: 2px solid var(--text-light);
+  border-radius: 0.5rem;
+  padding: 1rem 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.seat:hover {
+  background: #f0f0f0;
+}
+
+.seat.selected {
+  background: var(--primary-color);
+  color: var(--white);
+  border-color: var(--primary-color);
+}
+
+.selected__info {
+  margin-top: 2rem;
+  color: var(--text-dark);
+}
